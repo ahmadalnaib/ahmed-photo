@@ -4,6 +4,16 @@
   box-sizing: border-box;
 }
 
+@font-face{
+  font-family:"Logo";
+  src:url('/fonts/DancingScript-Bold.ttf') ;
+}
+
+@font-face{
+  font-family:"other";
+  src:url('/fonts/Montserrat-Regular.ttf') ;
+}
+
 :root{
   --header1:calc(2rem + 1vw);
   --header2:calc(3.5rem + 1vw);
@@ -42,7 +52,9 @@ li,button,label,input,p{
 }
 
 a {
+  font-size: var(--text);
   text-decoration: none;
+  color: #000;
   
 }
 
@@ -57,3 +69,95 @@ ul {
   justify-content: center;
 }
 
+
+
+body {
+  font-family: "other", sans-serif;
+}
+
+.container{
+  max-width: 1100px;
+  margin: auto;
+  overflow: hidden;
+}
+
+h1 {
+  font-family: "Logo" sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+/* nav--------------------------- */
+
+
+.main-header{
+  background: #fff;
+  padding: 2rem;
+  position: sticky;
+  top: 0;
+  left: 0;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+  z-index:1;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.nav-links {
+  display: flex;
+
+}
+.nav-links a {
+  padding: 2.5rem;
+  color: #000;
+}
+
+.logo {
+  font-family: "Logo" ;
+}
+
+
+/* hero section */
+
+.hero {
+ height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+.hero-content {
+  flex: 2 1 40rem;
+  text-align: center;
+}
+
+.hero-content p {
+  padding: 5rem 10rem;
+}
+
+.hero-content h2 {
+  padding-top: 3rem;
+}
+
+.hero-content a{
+  padding: 2rem 8rem;
+  border: 3px solid #000;
+  margin-bottom: 4rem;
+}
+
+.hero-img {
+  flex: 1 1 40rem;
+  background: linear-gradient(#dad8dd,#dad1d4);
+}
+
+.hero-ahmed{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
